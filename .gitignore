@@ -1,0 +1,26 @@
+
+# exclude everything
+gfx/*
+fonts/*
+/[Bb]uild/
+/[Bb]uilds/
+
+*.ai
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.php
+*.txt
+!index.php
+tempfile.txt
+*.zip
+*.gz
+log/*.log
+log/*.log.[0-9]
+.DS_Store
