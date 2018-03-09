@@ -1,0 +1,137 @@
+html {
+	font-size: @globalSize;
+	overflow-x: hidden;
+}
+
+body {
+	.body-reset(0,0);
+	background: @whiteColor;
+	background: @whiteColor;
+	overflow-x: hidden;
+	.main-font;
+	.font-weight(@fontNormal);
+	color: @blackColor;
+	font-size: 1.6rem;
+	opacity: 0;
+	 .transition(opacity,.6s,ease-in);
+
+	&.loaded {
+    	opacity: 1;
+  	}
+
+
+  	.loader {
+    	.fixed-reset;
+    	.full-size(100%,100%);
+    	background-color: @whiteColor;
+    	z-index: 9999;
+  }
+}
+
+button {
+	&:hover {
+		background: transparent;
+	}
+}
+
+
+.field-sep {
+  margin-bottom: 2.0rem;
+}
+
+.relative-wrapper {
+	.relative;
+}
+
+.row-separator {
+	margin-bottom: 50px;
+}
+
+.no-padding > .row > div[class*='col-'] {
+	.padding(@right:0,@left:0);
+}
+
+.circle-ico {
+	svg {
+		path {
+			 fill-opacity: 0;
+    		stroke-opacity: 0;
+		}
+	}
+}
+
+
+.hide-element{
+  opacity:0
+}
+
+.show-element {
+  opacity: 1;
+}
+
+
+a {
+	.transition(all,.3s,ease);
+	.text-decoration;
+	outline: none !important;
+
+	&:hover {
+		.text-decoration;
+	}
+
+  &:focus{
+    .text-decoration;
+    }
+
+    &:visited {
+    .text-decoration;
+  }
+}
+
+
+h1,h2,h3,h4,h5, p {
+	padding: 0;
+	margin: 0;
+}
+
+.wow {
+   visibility: hidden;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: @thirdFont;
+	font-weight: 900;
+}
+
+
+.call-btn {
+	.call-to-action;
+
+	&.black-btn {
+		border:2px solid @blackColor;
+		color: @blackColor;
+		background-color: transparent;
+		outline: none;
+		.transition(all,.3s,ease);
+
+		&:hover {
+			color: @whiteColor;
+			background: @blackColor;
+		}
+	}
+
+	&.home-btn {
+		.relative;
+		margin: 20px auto 10px auto;
+		.center-align;
+		.left(50%);
+		transform:translateX(-50%);
+	}
+
+}
+
+
+
+
+
+

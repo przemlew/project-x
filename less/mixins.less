@@ -1,0 +1,354 @@
+.body-style(@font-family, @color, @overflow-x) {
+	font-family: @font-family;
+	color: @color;
+	overflow-x: @overflow-x;
+}
+
+.body-reset(@margin,@padding) {
+	padding: @padding;
+	margin: @margin;
+}
+
+.full-size(@width,@height) {
+	width: @width;
+	height: @height;
+}
+
+.list-reset {
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+.main-font {
+	font-family: @mainFont;
+}
+
+.second-font {
+	font-family: @secondFont;
+}
+
+.content {
+	content: "";
+}
+
+.call-to-action {
+	padding: 8px 14px;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.font-weight(@fontWeight){
+	font-weight: @fontWeight;
+}
+
+.width(@width) {
+	width:@width;
+}
+
+.height(@height) {
+	height:@height;
+}
+
+.line-height(@line-height) {
+	line-height: @line-height;
+}
+
+
+.float(@float) {
+	float: @float;
+}
+
+.margin-reset {
+	padding: 0;
+	margin:0;
+}
+
+.padding(@right,@left) {
+	padding-right: @right;
+	padding-left: @left;
+}
+
+.margin-auto {
+	margin:0 auto;
+}
+
+.border-radius(@border-radius) {
+	border-radius: @border-radius;
+	-webkit-border-radius: @border-radius;
+	-ms-border-radius: @border-radius;
+}
+
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.top(@top) {
+	top: @top;
+}
+
+.right(@right) {
+	right: @right;
+}
+
+.bottom(@bottom) {
+	bottom: @bottom;
+}
+
+.left(@left) {
+	left: @left;
+}
+
+.z-index(@z-index) {
+	z-index: @z-index;
+}
+
+
+
+.relative-reset(@left:0, @top:0, @z-index:100) {
+	left: @left;
+	top:@top;
+	z-index: @z-index;
+}
+
+.absolute-reset(@top,@left) {
+	top: @top;
+	left:@left;
+}
+
+
+.fixed-reset {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.hidden-overflow(@hidden) {
+	overflow: @hidden;
+}
+
+.overflow-y {
+	overflow-y: hidden;
+}
+
+.overflow-auto {
+	overflow-y: auto;
+}
+
+.table {
+	display: table;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.block {
+	display: block;
+}
+
+.flex {
+	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+}
+
+.flex-center {
+	-webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.flex-column {
+	-webkit-flex-direction: column;
+   flex-direction: column;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+.none {
+	display: none;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.opacity(@opacity) {
+	opacity: @opacity;
+}
+
+.vertical-position {
+	top: 50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+}
+
+.center-position {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+.text-decoration {
+	text-decoration: none;
+}
+
+.bck-size(@bg-size,@bg-repeat) {
+	background-size: @bg-size;
+	-webkit-background-size:@bg-size;
+	background-repeat: @bg-repeat;
+}
+
+.no-repeat {
+	background-repeat: no-repeat;
+}
+
+.bck-position {
+	background-position: 50% 50%;
+}
+
+/*TRANSITIONS*/
+.transition(@prop:all, @time:1s, @ease:linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+
+.translate(@x,@y) {
+	-webkit-transform: translate(@x, @y);
+  	-ms-transform: translate(@x, @y);
+   	-o-transform: translate(@x, @y);
+    transform: translate(@x, @y);
+}
+
+.rotate(@deg) {
+	transform: rotate(@deg);
+	-webkit-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+}
+
+
+
+/*ANIMATIONS*/
+.animation-delay (@name, @duration, @timing, @delay, @fill-mode) {
+	-webkit-animation: @name @duration @timing @delay @fill-mode;
+	-moz-animation: @name @duration @timing @delay @fill-mode;
+	-ms-animation: @name @duration @timing @delay @fill-mode;
+}
+
+.animation-custom(@name, @duration, @animation-timing-function, @animation-iteration-count, @animation-fill-mode) {
+	-webkit-animation: @name @duration @animation-timing-function @animation-iteration-count, @animation-fill-mode;
+	-moz-animation:   @name @duration @animation-timing-function @animation-iteration-count, @animation-fill-mode;
+	-ms-animation:    @name @duration @animation-timing-function @animation-iteration-count, @animation-fill-mode;
+}
+
+.animation-short (@name,@duration, @animation-timing-function) {
+	-webkit-animation: @name @duration @animation-timing-function;
+	-moz-animation: @name @duration @animation-timing-function;
+	-ms-animation: @name @duration @animation-timing-function;
+}
+
+
+
+.animation-bounce(@name,@duration,@iteration-count) {
+	-webkit-animation: @name @duration @iteration-count;
+	-moz-animation: @name @duration @iteration-count;
+	-ms-animation: @name @duration @iteration-count;
+}
+
+.animation-fade-bottom (@name, @duration: 100ms 200ms, @fill-mode: both, @ease: ease) {
+	-webkit-animation: @name @duration @fill-mode @ease;
+	-moz-animation:    @name @duration @fill-mode @ease;
+	-ms-animation:     @name @duration @fill-mode @ease;
+}
+
+.animation-fade-delay (@name, @duration: 1500ms, @fill-mode: both, @delay: 3000ms, @ease: ease) {
+	-webkit-animation: @name @duration @fill-mode @delay @ease;
+	-moz-animation: @name @duration @fill-mode @delay @ease;
+	-ms-animation: @name @duration @fill-mode @delay @ease;
+}
+
+.animation-mixin(@name, @duration, @timing, @delay, @fill-mode) {
+	-webkit-animation: @name @duration @timing @delay @fill-mode;
+	-moz-animation:    @name @duration @timing @delay @fill-mode;
+	-ms-animation:    @name @duration @timing @delay @fill-mode;
+}
+
+/*EXTRA ANIMATIONS FOR HOME PAGE INTRO*/
+.animation-fade-in {
+	-webkit-animation: fadeIn 1.2s linear 3s backwards;
+	-moz-animation: fadeIn 1.2s linear 3s backwards;
+	-ms-animation: fadeIn 1.2s linear 3s backwards;
+	animation: fadeIn 1.2s linear 3s backwards;
+}
+
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+/*Form styling*/ 
+
+.form-reset(@border-radius:0, @box-shadow:none,@line-height:1.5) {
+	border-radius: @border-radius;
+	box-shadow: @box-shadow;
+	line-height: @line-height;
+}
+
+.placeholder(@color:@blackColor, @font-size:@normalSize) {
+	color: @color;
+	font-size: @font-size;
+}

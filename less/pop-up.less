@@ -1,0 +1,90 @@
+/*POP-UP SETTINGS*/
+.mfp-bg {
+    background: #03080f;
+    cursor: pointer;
+    z-index: 1040;
+}
+
+button.mfp-close, button.mfp-arrow {
+    display: block;
+    color: #000;
+    border: 1px solid #000;
+    z-index: 999999;
+}
+
+.mfp-close,
+.message-popup > button.mfp-close
+ {
+  color: #000;
+  right: 10px;
+  top: 10px;
+  opacity: 1;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.mfp-close:active,
+.message-popup > button.mfp-close:active {
+  top: 10px;
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: #000;
+}
+
+.message-popup {
+    background-color: #fff;
+    color: #000;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    z-index: 999999;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+
+
+ .mfp-fade.mfp-bg {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out; 
+        -moz-transition: all 0.3s ease-out; 
+        -ms-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+      .mfp-fade.mfp-bg.mfp-ready {
+        opacity: 0.9;
+      }
+      .mfp-fade.mfp-bg.mfp-removing {
+        opacity: 0;
+      }
+      .mfp-fade.mfp-wrap .mfp-content {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out; 
+        -moz-transition: all 0.3s ease-out; 
+        -ms-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+      .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+        opacity: 1;
+      }
+      .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+        opacity: 0;
+      }
+
+
+.close-modal {
+    display: inline-block;
+    padding:0 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: #fff;
+}
