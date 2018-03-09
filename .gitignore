@@ -23,4 +23,14 @@ tempfile.txt
 *.gz
 log/*.log
 log/*.log.[0-9]
+
+
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
